@@ -1,0 +1,219 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    background-image: linear-gradient(to left, rgba(60, 209, 147, 0), rgb(217, 102, 102));
+    max-width:100vw;
+    max-height: 100vh;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top:10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    margin-top: 50px;
+    display: flex;
+    width:100%;
+    max-width:100%;
+    justify-content: center;
+    
+}
+
+.title{
+    font-size: 20px;
+}
+
+.search .input_text{
+    padding:10px;
+}
+
+.search_btn{
+    font-size:15px;
+    padding:10px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.search .input_text{
+    width:40%;
+    max-width:40%;
+
+}
+
+.profilecontainer{
+    width:100%;
+}
+.cardcontainer{
+    width:40%;
+    height:auto;
+    background-color:#F0F0F0;
+    margin-inline:auto;
+    margin-top:30px;
+    position:relative;
+    border:none;
+    padding-top:5px;
+    box-shadow: 3px 2px 2px rgb(94, 88, 88);
+    transition:all 1s linear 0.5;
+    
+}
+
+.loading{
+
+    text-transform: uppercase;
+    padding:10px;
+    margin-top:70px;
+    font-size: 32px;
+}
+
+.errorcontainer{
+    width:40%;
+    height:auto;
+    text-transform: uppercase;
+    padding:10px;
+    margin-top:70px;
+}
+
+.cardcontainer:hover{
+    transform: scale(1.03) rotate(-3deg);
+}
+
+.cardheader{
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+}
+
+.avatar_img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    overflow:hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile_btn{
+    font-size:10px;
+    padding:5px;
+    border:1px solid rgb(91, 91, 94);
+    border-radius: 5px;
+    cursor:pointer;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.avatar{
+    display: flex;
+    gap:10px;
+}
+
+.avatarnamecontainer{
+    display: flex;
+    flex-direction: column;
+    font-size:1.5rem;
+    margin-top:15px;
+    font-weight: bold;
+}
+.avatar_username{
+    font-size: 1rem;
+    
+}
+
+.aboutcontainer h1{
+    font-size: 30px;
+}
+
+
+.aboutcontainer p{
+    font-size: 13px;
+}
+.aboutcontainer{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    margin-top:6px;
+    padding:15px;
+}
+
+.follower_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top:6px;
+    padding:15px;
+    font-size: 15px;
+
+}
+
+.follower{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.followings{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.repos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.follower p,.followings p,.repos p{
+    font-size:13px;
+}
+
+@media  (max-width:666px) {
+    .cardcontainer{
+        width:85vw;
+        height:auto;
+       
+        
+    }
+
+    .search{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .input_text{
+        min-width: 65vw;
+        margin-bottom: 10px;
+    
+    }
+    .search_btn{
+       max-width: fit-content;
+    }
+    .title{
+        font-size:15px;
+    }
+    
+}
