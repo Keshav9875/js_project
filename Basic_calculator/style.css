@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+    width:100%;
+    height:100%;
+    font-size:62.5%;
+}
+
+body{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(images/background_calc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width:33rem;
+    height:33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+    border:none;
+    box-shadow: 0px 0px 5px 3px white;
+
+}
+
+.inputcontainer{
+    width:95%;
+    margin:2px;
+    padding:10px;
+    min-height:50px;
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#input_text{
+    width:100%;
+    height:100%;
+    background: transparent;
+    color:white;
+    border:none;
+    text-align: right;
+    box-shadow: 0px 0px 4px 1px white;
+    padding:10px;
+   
+}
+
+#input_text:focus-visible{
+    outline:1px solid red;
+}
+
+.typing{
+
+   box-shadow: 0px 0px 4px 2px rgb(82, 206, 82) !important;
+   
+}
+
+.buttoncontainer{
+    min-width:95%;
+    min-height:25rem;
+    margin:2px;
+    padding:2px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:4px;
+    place-content: center;
+    place-items: center;
+    
+    
+}
+
+button{
+
+    width:60px;
+    height:40px;
+    border-radius: 50%;
+    background: transparent;
+    color:white;
+    box-shadow: 0px -1px 1px 1px white;
+    cursor:pointer;
+    margin: 2px;
+    border:none;
+    
+}
+
+#ac,#del{
+    background-color: rgb(236, 177, 67);
+}
+
+#eql{
+    background-color: rgb(27, 158, 27);
+}
+
+
+
