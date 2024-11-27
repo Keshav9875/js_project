@@ -1,0 +1,152 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    height:100%;
+    width:100%;
+    background-color: rgb(164, 60, 164);
+    display: grid;
+    place-items: center;
+
+}
+
+.qrcardcontainer{
+   height:auto;
+   max-height:400px;
+   width:450px;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   padding:10px;
+   margin:10px;
+}
+
+.mainheading{
+    font-size: 40px;
+    font-weight: 300px;
+    margin:10px;
+    margin-bottom: 5px;
+}
+
+.minheading{
+    font-size: 20px;
+    font-weight: 100px;
+    margin:10px;
+}
+
+.qr_input{
+    margin-inline:auto;
+    margin-bottom:10px;
+    text-align: center;
+    min-width: 95%;
+    height:40px;
+
+
+}
+
+.qr_input:focus-visible{
+    outline:1px solid purple;
+}
+
+.qrgencontainer{
+    width:95%;
+    height:auto;
+    max-height:220px;
+    margin-bottom:10px;
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.qrheading{
+  
+    width:100%;
+    height:50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(77, 12, 77);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.qrheading button{
+    all:unset;
+    border:none;
+    background-color:transparent;
+    font-size: 20px;
+    cursor:pointer;
+
+}
+.qrcode{
+    display:none;
+}
+
+.show{
+    display:inline-block;
+   
+}
+
+
+.qrimgcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:auto;
+    
+
+}
+
+.qrcode{
+    width:60%;
+    margin:10px;
+    height:130px;
+    object-fit: contain;
+    border-radius:10px;
+}
+
+
+@media (max-width:490px) {
+    .qrcardcontainer{
+        width:95vw;
+    }
+    .mainheading{
+        font-size: 25px;
+    }
+    .minheading{
+        font-size:15px;
+    }
+    #qrbutton{
+        font-size: 20px;
+    }
+    .qr_input{
+        min-width:95%;
+    }
+}
+
+@media (max-width:275px) {
+    .mainheading{
+        font-size: 20px;
+    }
+    .minheading{
+        font-size:10px;
+    }
+    #qrbutton{
+        font-size: 15px;
+    }
+}
